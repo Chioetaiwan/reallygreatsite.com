@@ -294,25 +294,22 @@ header {
       <p>NOT A HOTEL KITAKARUIZAWA</p>
       <p>$350/Day</p>
     </div>
-
-
   </main>
- <script>
-  document.querySelector('.search-bar').addEventListener('submit', function(e) {
-    e.preventDefault(); // ページリロード防止
+document.querySelector('.search-bar').addEventListener('submit', function(e) {
+  e.preventDefault(); // ページがリロードされるのを防ぐ
 
-    const selectedLocation = document.querySelector('select[name="location"]').value;
-    const cards = document.querySelectorAll('.movie-card');
+  const selectedLocation = document.querySelector('select[name="location"]').value;
+  const cards = document.querySelectorAll('.movie-card');
 
-    cards.forEach(card => {
-      const cardLocation = card.getAttribute('data-location');
-      if (selectedLocation === "" || cardLocation === selectedLocation) {
-        card.style.display = 'block'; // 表示
-      } else {
-        card.style.display = 'none'; // 非表示
-      }
-    });
+  cards.forEach(card => {
+    const cardLocation = card.getAttribute('data-location');
+    if (selectedLocation === "" || cardLocation === selectedLocation) {
+      card.style.display = 'block'; // 見せる
+    } else {
+      card.style.display = 'none'; // 隠す
+    }
   });
-</script>
+});
+
 </body>
 </html>
