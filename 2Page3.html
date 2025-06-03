@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOT A HOTEL</title>
+  <style>
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #111827;
+  color: white;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero-image {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+section {
+  padding: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.booking button {
+  padding: 0.75rem 1.5rem;
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.booking button:hover {
+  background-color: #2563eb;
+}
+
+/* 共通レイアウト設定 */
+.square-layout {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* 左画像・右キャプション */
+.square-layout.left-image {
+  flex-direction: row;
+}
+.square-layout.left-image .square-caption {
+  text-align: left;
+}
+
+/* 右画像・左キャプション */
+.square-layout.right-image {
+  flex-direction: row-reverse;
+}
+.square-layout.right-image .square-caption {
+  text-align: right;
+}
+
+/* 画像のサイズと角丸設定 */
+.square-layout img {
+  width: 600px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+
+ </style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOT A HOTEL ISHIGAKI | EARTH</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <img src="https://images.microcms-assets.io/assets/1a905fa32d0e4bb1b2f280ab2ee5451d/d7b588a297ef4e47aafbf7b0a1e0d1b3/aoshima-masterpiece-hero-001.jpg?w=816&h=408&dpr=2&fit=crop&fm=webp" alt="Earth Villa" class="hero-image">
+    <div class="hero-text">
+      <h1>MASTERPIECE</h1>
+      <p>NOT A HOTEL AOSHIMA</p>
+    </div>
+  </header>
+
+  <section class="description">
+    <h2>Overview</h2>
+    <p>The terrace is not for temporary use, but as a living room where you can spend a variety of rich moments. A house in Aoshima connected to the sea, where you can feel the richness of time spent outdoors with the sea breeze all around you.</p>
+  </section>
+
+<div class="square-layout left-image">
+    <img src="https://images.microcms-assets.io/assets/1a905fa32d0e4bb1b2f280ab2ee5451d/0f0eca63daff4f1686d66855c3512653/aoshima-masterpiece-characteristics3-001.jpg?w=392&h=392&dpr=2&fit=crop&fm=webp" alt="Left Square">
+    <div class="square-caption">
+    <h1>Bed Room</h1>
+    <h2>Ocean View</h2>
+  </div>
+</div>
+
+<div class="square-layout right-image">
+    <img src="https://images.microcms-assets.io/assets/1a905fa32d0e4bb1b2f280ab2ee5451d/2782dc81f9894985a1c56333481e6090/aoshima-masterpiece-characteristics4-002.jpg?w=392&h=392&dpr=2&fit=crop&fm=webp" alt="Right Square">
+    <div class="square-caption">
+    <h1>Dinning Terrace</h1>
+    <h2>Ocean View</h2>
+  </div>
+</div>
+
+<div class="square-layout left-image">
+    <img src="https://images.microcms-assets.io/assets/1a905fa32d0e4bb1b2f280ab2ee5451d/3210dbb6df914d248f520d8d25fd0246/aoshima-masterpiece-characteristics6-001.jpg?w=392&h=392&dpr=2&fit=crop&fm=webp" alt="Left Square">
+    <div class="square-caption">
+    <h1>Pool</h1>
+    <h2>Ocean View</h2>
+  </div>
+</div>
+
+<div class="square-layout right-image">
+    <img src="https://images.microcms-assets.io/assets/1a905fa32d0e4bb1b2f280ab2ee5451d/49aeac383a61446aa22c8b6df0a54b6f/aoshima-masterpiece-characteristics5-002.jpg?w=392&h=392&dpr=2&fit=crop&fm=webp" alt="Right Square">
+    <div class="square-caption">
+    <h1>Sauna</h1>
+    <h2>Private Sauna</h2>
+  </div>
+</div>
+
+  <section class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://images.microcms-assets.io/assets/1a905fa32d0e4bb1b2f280ab2ee5451d/2a4007613fac4c55a19195a2b2e7c459/aoshima-masterpiece-characteristics1-001_2.jpg?w=392&h=392&dpr=2&fit=crop&fm=webp" alt="Photo 1">
+      <img src="https://images.microcms-assets.io/assets/1a905fa32d0e4bb1b2f280ab2ee5451d/c83bfbf7b59649daa1340bd4c4d65863/aoshima-masterpiece-characteristics6-002.jpg?w=392&h=392&dpr=2&fit=crop&fm=webp" alt="Photo 2">
+      <img src="https://images.microcms-assets.io/assets/1a905fa32d0e4bb1b2f280ab2ee5451d/14ed613e001d4970a1f14852354725e2/aoshima-location-hr-002.jpg?w=560&h=320&dpr=2&fit=crop&fm=webp" alt="Photo 3">
+    </div>
+  </section>
+
+  <section class="booking">
+    <h2>Reservation Information</h2>
+    <p>1 Day: <strong>$1,000</strong></p>
+    <button onclick="alert('予約機能は未実装です')">Book Now</button>
+  </section>
+
+ </body>
+</html>

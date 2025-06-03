@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOT A HOTEL</title>
+  <style>
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #111827;
+  color: white;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero-image {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+section {
+  padding: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.booking button {
+  padding: 0.75rem 1.5rem;
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.booking button:hover {
+  background-color: #2563eb;
+}
+
+/* 共通レイアウト設定 */
+.square-layout {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* 左画像・右キャプション */
+.square-layout.left-image {
+  flex-direction: row;
+}
+.square-layout.left-image .square-caption {
+  text-align: left;
+}
+
+/* 右画像・左キャプション */
+.square-layout.right-image {
+  flex-direction: row-reverse;
+}
+.square-layout.right-image .square-caption {
+  text-align: right;
+}
+
+/* 画像のサイズと角丸設定 */
+.square-layout img {
+  width: 600px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+
+ </style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOT A HOTEL ISHIGAKI | EARTH</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <img src="https://images.microcms-assets.io/assets/1a905fa32d0e4bb1b2f280ab2ee5451d/9a9e4a9e35bd47e883b85e41d28592d1/fukuoka-penthouse-hero-001.jpg?w=816&h=408&dpr=2&fit=crop&fm=webp" alt="Earth Villa" class="hero-image">
+    <div class="hero-text">
+      <h1>+PENTHOUSE</h1>
+      <p>NOT A HOTEL FUKUOKA</p>
+    </div>
+  </header>
+
+  <section class="description">
+    <h2>Overview</h2>
+    <p>Luxurious rooftop terrace with outdoor kitchen that extends above the outdoor living area with fireplace. A sauna and water bath for entertaining with friends. A house of circulation where several spaces are freely connected.</p>
+  </section>
+
+<div class="square-layout left-image">
+    <img src="https://images.microcms-assets.io/assets/1a905fa32d0e4bb1b2f280ab2ee5451d/3edcc92fcb5d429bb28e9a404c79922c/fukuoka-penthouse-characteristics7-001.jpg?w=392&h=392&dpr=2&fit=crop&fm=webp" alt="Left Square">
+    <div class="square-caption">
+    <h1>Bed Room</h1>
+    <h2>Next to Bathroom</h2>
+  </div>
+</div>
+
+<div class="square-layout right-image">
+    <img src="https://images.microcms-assets.io/assets/1a905fa32d0e4bb1b2f280ab2ee5451d/3472ba17c3c7445a9bf031fac03f13b8/fukuoka-penthouse-characteristics6-001.jpg?w=392&h=392&dpr=2&fit=crop&fm=webp" alt="Right Square">
+    <div class="square-caption">
+    <h1>BBQ Place</h1>
+    <h2>Rooftop Terrace</h2>
+  </div>
+</div>
+
+<div class="square-layout left-image">
+    <img src="https://images.microcms-assets.io/assets/1a905fa32d0e4bb1b2f280ab2ee5451d/acfe86c25db04436929a5aa7a8b0862f/fukuoka-sound-characteristics2-001.jpg?w=392&h=392&dpr=2&fit=crop&fm=webp" alt="Left Square">
+    <div class="square-caption">
+    <h1>Theater Room</h1>
+    <h2>Private Area</h2>
+  </div>
+</div>
+
+<div class="square-layout right-image">
+    <img src="https://images.microcms-assets.io/assets/1a905fa32d0e4bb1b2f280ab2ee5451d/ffa14e9fffa54ce18b9db9233f73800c/fukuoka-penthouse-characteristics5-001.jpg?w=392&h=392&dpr=2&fit=crop&fm=webp" alt="Right Square">
+    <div class="square-caption">
+    <h1>Sauna</h1>
+    <h2>Private Sauna</h2>
+  </div>
+</div>
+
+  <section class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://imagedelivery.net/jZ4zarr81i7OIuT1JQY5_A/lp/place/fukuoka_room-allocation_h.soldout.jpg/public" alt="Photo 1">
+      <img src="https://imagedelivery.net/jZ4zarr81i7OIuT1JQY5_A/lp/house-group/fukuoka-penthouse_concept_h.jpg/public" alt="Photo 2">
+      <img src="https://imagedelivery.net/jZ4zarr81i7OIuT1JQY5_A/lp/house-group/fukuoka/bar/1000x563/614.jpg/thumbnail" alt="Photo 3">
+
+
+      <!-- 他の画像も追加 -->
+    </div>
+  </section>
+
+  <section class="booking">
+    <h2>Reservation Information</h2>
+    <p>1 Day: <strong>$1,000</strong></p>
+    <button onclick="alert('予約機能は未実装です')">Book Now</button>
+  </section>
+
+ </body>
+</html>
