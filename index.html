@@ -110,7 +110,6 @@ header {
 
     .movie-card h3 {
       color: white;
-      margin-top: 1rem;
     }
 
     .movie-card p {
@@ -124,6 +123,31 @@ header {
     padding: 2rem;
     justify-content: center;
   }
+  
+    .follow-container {
+      text-align: center;
+    }
+
+    .icon-row {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .icon-row img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.2s;
+    }
+
+    .icon-row img:hover {
+      transform: scale(1.1);
+    }
+
+  Follow
+  [X] [Instagram] [LINE] [YouTube]
+
   </style>
 </head>
 <body>
@@ -313,5 +337,25 @@ header {
     });
   });
 </script>
+
+  <div class="follow-container">
+    <h3>Follow</h3>
+    <div class="icon-row">
+      <a href="https://x.com/notahotel_inc" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png" alt="X" />
+      </a>
+      <a href="https://www.instagram.com/notahotel_official/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
+      </a>
+      <a href="https://page.line.me/026nkmwo?oat__id=3486292&openQrModal=true" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111498.png" alt="LINE" />
+      </a>
+      <a href="https://www.youtube.com/@NOTAHOTEL/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" />
+      </a>
+    </div>
+  </div>
+  <blank>
+    </blank>
 </body>
 </html>
